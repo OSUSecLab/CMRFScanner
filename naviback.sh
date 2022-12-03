@@ -1,0 +1,12 @@
+python3 naviback-slave-baidu.py &
+python3 naviback-slave-baidu.py &
+python3 naviback-slave-baidu.py &
+python3 naviback-slave-baidu.py &
+python3 naviback-slave-baidu.py &
+python3 naviback-slave-baidu.py &
+python3 naviback-slave-baidu.py &
+python3 naviback-slave-baidu.py &
+python3 naviback-slave-baidu.py &
+python3 naviback-slave-baidu.py &
+python3 naviback-slave-baidu.py &
+python3 naviback-slave-baidu.py &

@@ -1,0 +1,16 @@
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
+python3 AIAPI-slave-baidu.py &
