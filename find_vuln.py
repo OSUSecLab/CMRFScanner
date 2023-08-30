@@ -599,12 +599,12 @@ def find_caller_with_data(func,funcmap,reversefuncmap,res,visitedset):
 
 # nodes=get_data_flow('test1.js',{})
 import glob, os, time, sys
-def analyze_a_wxapkg(wxid):
+def analyze_a_wxapkg(wxid,folder):
     print(wxid)
     t=time.time()
     # wxid='wxe0e3947bdc7d99ec'
     # walk_dir=folder+"/"+wxid+'-dec'
-    walk_dir='/home/allen/Github/SP23/DoubleX/src/output/'+wxid+'-dec/'
+    walk_dir=folder
 
     logs={'result':[],'checked':False,'involved':False,'sensitiveAPIs':{}}
     global privilegedfunclist
@@ -685,7 +685,7 @@ def analyze_a_wxapkg(wxid):
     for root, dirs, files in os.walk(walk_dir):
         
         for file in files:
-            
+             
             if file.endswith("min.js"):
                 continue
             # if file.endswith(".js"):
@@ -800,11 +800,13 @@ def analyze_a_wxapkg(wxid):
     return logs,exec_time
     # print((time.time()-t))
 # print (nodes)
-def analyze_from_wxapkg(batch,wxid):
+
+# folder = '/home/allen/Github/SP23/DoubleX/src/output/'+wxid+'-dec/'
+def analyze_from_wxapkg(wxid,folder):
     # batch='22'
     # wxid='wxcd538bb3d50152f1'
-    analysis_res,exec_time=analyze_a_wxapkg(wxid)
-    finalresult={'batch':batch,'wxid':wxid,'res':analysis_res,'exec_time':exec_time}
+    analysis_res,exec_time=analyze_a_wxapkg(wxid,folder)
+    finalresult={'wxid':wxid,'res':analysis_res,'exec_time':exec_time}
     return finalresult
 
 # print(time.time())
